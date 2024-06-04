@@ -1,0 +1,22 @@
+{
+    "name": "dcyilmaz/modelwire",
+    "description": "Liwire Datatable Component",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^11.10",
+        "livewire/livewire": "^3.5",
+        "twitter/bootstrap": "^5.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dcyilmaz\\Modelwire\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Duran Can YILMAZ",
+            "email": "duran4@rengaver.com"
+        }
+    ]
+}
