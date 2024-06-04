@@ -6,9 +6,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
+        "php": "^7.3|^8.0",
         "laravel/framework": "^10.0",
-        "livewire/livewire": "^2.0",
-        "dcyilmaz/modelwire": "dev-master"
+        "livewire/livewire": "^2.0"
     },
     "license": "MIT",
     "autoload": {
