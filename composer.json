@@ -3,6 +3,7 @@
     "description": "Liwire Datatable Component",
     "type": "library",
     "version": "1.0.0",
+    "prefer-stable": true,
     "require": {
         "laravel/framework": "^11.10",
         "livewire/livewire": "^3.5",
