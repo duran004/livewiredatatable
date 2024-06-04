@@ -4,11 +4,11 @@
     "type": "library",
     "version": "1.0.0",
     "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "laravel/framework": "^11.10",
         "livewire/livewire": "^3.5",
-        "twitter/bootstrap": "^5.3"
+        "twitter/bootstrap": "^5.3",
+        "dcyilmaz/liwire": "dev-master"
     },
     "license": "MIT",
     "autoload": {
