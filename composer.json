@@ -8,7 +8,7 @@
     "require": {
         "laravel/framework": "^10.0",
         "livewire/livewire": "^2.0",
-        "dcyilmaz/modelwire": "^1.0"
+        "dcyilmaz/modelwire": "main"
     },
     "license": "MIT",
     "autoload": {
