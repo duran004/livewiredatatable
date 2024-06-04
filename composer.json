@@ -2,6 +2,7 @@
     "name": "dcyilmaz/modelwire",
     "description": "Liwire Datatable Component",
     "type": "library",
+    "version": "1.0.0",
     "require": {
         "laravel/framework": "^11.10",
         "livewire/livewire": "^3.5",
