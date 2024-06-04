@@ -8,8 +8,7 @@
     "require": {
         "laravel/framework": "^10.0",
         "livewire/livewire": "^2.0",
-        "twitter/bootstrap": "^5.0",
-        "dcyilmaz/modelwire": "dev-master"
+        "twitter/bootstrap": "^5.0"
     },
     "license": "MIT",
     "autoload": {
