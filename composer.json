@@ -7,8 +7,7 @@
     "prefer-stable": true,
     "require": {
         "laravel/framework": "^10.0",
-        "livewire/livewire": "^2.0",
-        "dcyilmaz/modelwire": "main"
+        "livewire/livewire": "^2.0"
     },
     "license": "MIT",
     "autoload": {
