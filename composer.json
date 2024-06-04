@@ -1,13 +1,14 @@
 {
     "name": "dcyilmaz/modelwire",
-    "description": "Liwire Datatable Component",
+    "description": "Livewire Datatable Component",
     "type": "library",
     "version": "1.0.0",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "laravel/framework": "^11.10",
-        "livewire/livewire": "^3.5",
-        "twitter/bootstrap": "^5.3",
+        "laravel/framework": "^10.0",
+        "livewire/livewire": "^2.0",
+        "twitter/bootstrap": "^5.0",
         "dcyilmaz/modelwire": "dev-master"
     },
     "license": "MIT",
