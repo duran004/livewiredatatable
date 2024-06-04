@@ -3,8 +3,6 @@
     "description": "Livewire Datatable Component",
     "type": "library",
     "version": "1.0.0",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "require": {
         "php": "^7.3|^8.0",
         "laravel/framework": "^10.0",
@@ -16,10 +14,19 @@
             "Dcyilmaz\\Modelwire\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dcyilmaz\\Modelwire\\ModelwireServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Duran Can YILMAZ",
             "email": "duran4@rengaver.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
