@@ -30,3 +30,7 @@ YES! 🙂
 
 ## Still Beta!
 Be careful when using it, it is still in beta.
+
+
+![image](https://github.com/duran004/livewiredatatable/assets/132943905/6de8c4c2-5b52-4590-91ef-0764f766f782)
+![image](https://github.com/duran004/livewiredatatable/assets/132943905/34fdd62a-b8e3-4d6d-987b-b3dcf36003f5)
