@@ -10,13 +10,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Dcyilmaz\\Modelwire\\": "src/"
+            "Dcyilmaz\\LivewireDataTable\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Dcyilmaz\\Modelwire\\LivewireDatatableServiceProvider"
+                "Dcyilmaz\\LivewireDataTable\\LivewireDataTableServiceProvider"
             ]
         }
     },
