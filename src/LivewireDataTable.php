@@ -11,15 +11,17 @@ class LivewireDataTable extends Component
 
     public $search = '';
     public $model;
+    public string $api_route = '';
     public array $columns = [];
     protected array $protected_columns = ['password', 'remember_token', 'email_verified_at'];
     public int $perPage = 10;
 
     protected $queryString = ['search' => ['except' => '']];
 
-    public function mount($model)
+    public function mount($model, string $api_route = '')
     {
         $this->model = new $model;
+        $this->api_route = $api_route;
         $this->columns =  $this->model->getFillable();
         //add id,created_at,updated_at to columns
         array_unshift($this->columns, 'id');
@@ -40,7 +42,9 @@ class LivewireDataTable extends Component
         if ($this->search) {
             $items = $items->where(function ($query) {
                 foreach ($this->columns as $column) {
-                    $query->orWhere($column, 'like', '%' . $this->search . '%');
+                    if ($column != 'actions') {
+                        $query->orWhere($column, 'like', '%' . $this->search . '%');
+                    }
                 }
             });
         }
@@ -49,7 +53,8 @@ class LivewireDataTable extends Component
 
 
         return view('livewire-data-table.livewiredatatable', [
-            'items' => $items
+            'items' => $items,
+            'api_route' => $this->api_route,
         ]);
     }
 }

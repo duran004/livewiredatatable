@@ -1,3 +1,7 @@
+@once
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+@endonce
 <div>
     <input wire:model.live="search" type="search" class="form-control" placeholder="Search users..." />
     <table class="table">
@@ -41,8 +45,9 @@
                             @endif
                         @elseif ($label == 'actions')
                             <td>
-                                <a href="" class="btn btn-primary">Edit</a>
-                                <a href="" class="btn btn-danger">Delete</a>
+                                <a href="{{ $api_route }}/{{ $item->id }}/edit" class="btn btn-primary">Edit</a>
+                                <a href="{{ $api_route }}/{{ $item->id }}/delete"
+                                    class="btn btn-danger">Delete</a>
                             </td>
                         @else
                             <td>{{ $item->$label }}</td>
