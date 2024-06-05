@@ -25,5 +25,8 @@ Do not forget add bootstrap cdn 🙂
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 ```
 
+## Can i use any Model?
+YES! 🙂
+
 ## Still Beta!
 Be careful when using it, it is still in beta.
