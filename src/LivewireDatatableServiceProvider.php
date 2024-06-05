@@ -12,7 +12,7 @@ class LivewireDatatableServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/livewire-data-table'),
         ], 'livewire-data-table-views');
-        \Livewire\Livewire::component('livewire-data-table', LivewireDataTable::class);
+        \Livewire\Livewire::component('livewire-data-table', \Dcyilmaz\LivewireDataTable\LivewireDataTable::class);
     }
 
     public function register()
