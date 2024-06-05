@@ -14,7 +14,7 @@ php artisan vendor:publish --tag=livewire-data-table-views
 
 3- Use in any view with 
 ```
-@livewire('livewire-data-table', ['model' => \App\Models\User::class])
+@livewire('livewire-data-table', ['model' => \App\Models\User::class, 'api_route' => '/admin/users'])
 @livewireScripts
 ```
 ## How to design?
