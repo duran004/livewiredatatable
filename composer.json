@@ -1,5 +1,5 @@
 {
-    "name": "dcyilmaz/modelwire",
+    "name": "dcyilmaz/livewiredatatable",
     "description": "Livewire Datatable Component",
     "type": "library",
     "require": {

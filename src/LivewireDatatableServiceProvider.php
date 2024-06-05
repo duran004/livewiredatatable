@@ -1,6 +1,6 @@
 <?php
 
-namespace DuranCanYilmaz\LivewireDataTable;
+namespace Dcyilmaz\LivewireDataTable;
 
 use Illuminate\Support\ServiceProvider;
 
