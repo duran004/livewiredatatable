@@ -58,18 +58,18 @@
         </tbody>
     </table>
 
-    <div class="pagination row">
+    <div class="pagination pagination-sm">
         @if ($items->previousPageUrl())
-            <button wire:click="setPage({{ $items->currentPage() - 1 }})" class="btn btn-primary">Previous</button>
+            <button wire:click="setPage({{ $items->currentPage() - 1 }})" class="page-item page-link">Previous</button>
         @endif
 
         @foreach (range(1, $items->lastPage()) as $page)
             <button wire:click="setPage({{ $page }})"
-                class="{{ $items->currentPage() == $page ? 'btn btn-success' : 'btn btn-primary' }}">{{ $page }}</button>
+                class="{{ $items->currentPage() == $page ? 'disabled' : 'active' }} page-item page-link">{{ $page }}</button>
         @endforeach
 
         @if ($items->nextPageUrl())
-            <button wire:click="setPage({{ $items->currentPage() + 1 }})" class="btn btn-primary">Next</button>
+            <button wire:click="setPage({{ $items->currentPage() + 1 }})" class="page-item page-link">Next</button>
         @endif
 
     </div>
