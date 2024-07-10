@@ -36,9 +36,7 @@ class LivewireDataTable extends Component
     }
     public function model_name()
     {
-        // Assign the result of explode() to a variable
         $exploded = explode('\\', get_class($this->model));
-        // Now pass the variable to end()
         $this->model_name = end($exploded);
     }
 
