@@ -75,7 +75,7 @@ class LivewireDataTable extends Component
         $items = $items->paginate($this->per_page);
 
 
-        return view('livewire-data-table.livewiredatatable', [
+        return view('LivewireDataTable.livewiredatatable', [
             'items' => $items,
             'api_route' => $this->api_route,
         ]);

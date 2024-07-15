@@ -8,11 +8,11 @@ class LivewireDatatableServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-data-table');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'LivewireDataTable');
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/livewire-data-table'),
-        ], 'livewire-data-table-views');
-        \Livewire\Livewire::component('livewire-data-table', \Dcyilmaz\LivewireDataTable\LivewireDataTable::class);
+            __DIR__ . '/../resources/views' => resource_path('views/LivewireDataTable'),
+        ], 'views');
+        \Livewire\Livewire::component('LivewireDataTable', \Dcyilmaz\LivewireDataTable\LivewireDataTable::class);
     }
 
     public function register()
