@@ -9,7 +9,7 @@ composer require dcyilmaz/livewiredatatable
 
 2- Publish views with 
 ```
-php artisan vendor:publish --tag=livewire-data-table-views
+php artisan vendor:publish --tag=views
 ```
 
 3- Use in any view with 
