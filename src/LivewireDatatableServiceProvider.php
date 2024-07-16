@@ -4,7 +4,7 @@ namespace Dcyilmaz\LivewireDataTable;
 
 use Illuminate\Support\ServiceProvider;
 
-class LivewireDatatableServiceProvider extends ServiceProvider
+class LivewireDataTableServiceProvider extends ServiceProvider
 {
     public function boot()
     {
