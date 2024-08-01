@@ -75,11 +75,10 @@
                                         </form>
                                     @endcan
                                     {{--  if model permissions --}}
-                                    @can("$model_name-delete", $item)
-                                        <form action="{{ $api_route }}/{{ $item->id }}" method="post"
+                                    @can("$model_name-destroy", $item)
+                                        <form action="{{ $api_route }}/{{ $item->id }}" method="DELETE"
                                             class="formajax_delete w-100">
                                             @csrf
-                                            @method('delete')
                                             <button type="submit" class="w-100 btn btn-sm btn-danger p-1"><i
                                                     class="fas fa-trash"></i></button>
                                         </form>
